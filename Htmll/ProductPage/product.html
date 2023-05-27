@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Balloon by Twiin</title>
+  <link rel="icon" href="../../Logo/logo1.jpg" />
+  <!--bootsrap link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <!--bootsrap icon-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <!--css link-->
+  <link rel="stylesheet" href="product.css" />
+  <!--Font awesome cdn-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!---navbar section-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="../../Htmll/LandingPage/index.html"><img
+          src="../../Logo/logo-removebg-preview.png" alt="logo" class="logo" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../../Htmll/LandingPage/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../../Htmll/ProductPage/product.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../../Htmll/AboutPage/about.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../Htmll/ContactPage/contact.html">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../Htmll/FaqsPage/faqs.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--Filter and Sort-->
+  <section class="filter mb-3">
+    <h1 class="my-5 text-center" id="changeCategory">Featured Product</h1>
+    <div class="container">
+      <div class="filter-button-group d-flex flex-wrap justify-content-center gap-3">
+
+        <button type="button" data-filter=".featured" class="btn active">Featured</button>
+        <button type="button" data-filter=".bouquet" class="btn ">Bouquet</button>
+        <button type="button" data-filter=".garland" class="btn ">Garland</button>
+        <button type="button" data-filter=".backdrop" class="btn ">Panel Backdrop</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!--Products-->
+  <section class="products">
+    <div class="container">
+      <div class="product-list row justify-content-center gap-5 py-5">
+        <!--1-->
+        <div class="featured card col-md-6 col-lg-4 col-xl-3 justify-content-center" style="width: 18rem">
+          <img src="../../Products/Featured Products/f1.jpg" class="card-img-top " alt="product"
+            data-bs-toggle="modal" data-bs-target="#modal1">
+          <div class="card-body">
+            <h5 class="card-title">Organic Full Balloon Arch</h5>
+            <p class="card-text fw-bold" data-price="2600">₱2,600</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">See Details</a>
+          </div>
+        </div>
+        <!--2-->
+        <div class="featured card col-md-6 col-lg-4 col-xl-3" style="width: 18rem">
+          <img src="../../Products/Featured Products/f2.png" class="card-img-top" alt="product" data-bs-toggle="modal"
+            data-bs-target="#modal2">
+
+          <div class="card-body">
+            <h5 class="card-title">Custom Balloon Bouquet</h5>
+            <p class="card-text fw-bold" data-price="500">₱500</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">See Details</a>
+          </div>
+        </div>
+        <!--3-->
+        <div class="featured card col-md-6 col-lg-4 col-xl-3" style="width: 18rem ">
+          <img src="../../Products/Featured Products/f3.jpg" class="card-img-top" alt="product" data-bs-toggle="modal"
+            data-bs-target="#modal3">
+          <div class="card-body">
+            <h5 class="card-title">Basic Hug Balloon</h5>
+            <p class="price-3 card-text fw-bold" style="padding-top: 1.5rem;">₱670</p>
+            <a href="#" class="btn-3 btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">See Details</a>
+          </div>
+        </div>
+        <!--4-->
+        <div class="featured bouquet card col-md-6 col-lg-4 col-xl-3" style="width: 18rem">
+          <img src="../../Products/Featured Products/f5.png" class="card-img-top" alt="product" data-bs-toggle="modal"
+            data-bs-target="#modal4">
+          <div class="card-body">
+            <h5 class="card-title">Basic Number Standee</h5>
+            <p class="price-4 card-text fw-bold" style="padding-top: 1.5rem;">₱200</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">See Details</a>
+          </div>
+        </div>
+        <!--5-->
+        <div class="featured bouquet card col-md-6 col-lg-4 col-xl-3" style="width: 18rem">
+          <img src="../../Products/Product page/all_products/basic_table_topper.jpg" class="card-img-top"
+            alt="product" data-bs-toggle="modal" data-bs-target="#modal5">
+
+          <div class="card-body">
+            <h5 class="card-title">Basic Table Topper</h5>
+            <p class="card-text fw-bold" style="padding-top: 1.5rem;">₱130</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal5">See Details</a>
+          </div>
+        </div>
+        <!--6-->
+        <div class="bouquet card col-md-6 col-lg-4 col-xl-3" style="width: 18rem">
+          <img src="../../Products/Product page/bouquet/BalloonBouquet/dedication_balloon_Wrap.png"
+            class="card-img-top" alt="product" data-bs-toggle="modal" data-bs-target="#modal6">
+
+          <div class="card-body">
+            <h5 class="card-title">Dedication Balloon Wrap</h5>
+            <p class="card-text fw-bold">₱560</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal6">See Details</a>
+          </div>
+        </div>
+        <!--7-->
+        <div class="bouquet card col-md-6 col-lg-4 col-xl-3" style="width: 18rem">
+          <img src="../../Products/Product page/bouquet/BalloonBouquet/custom_balloon.png" class="card-img-top"
+            alt="product" data-bs-toggle="modal" data-bs-target="#modal7">
+
+          <div class="card-body">
+            <h5 class="card-title">Custom Balloon Bouquet</h5>
+            <p class="card-text fw-bold">₱500</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal7">See Details</a>
+          </div>
+        </div>
+        <!--8-->
+        <div class="garland card col-md-6 col-lg-4 col-xl-3" style="width: 18rem">
+          <img src="../../Products/Product page/garland/balloon_garland/organic_single_garland2.png"
+            class="card-img-top" alt="product" data-bs-toggle="modal" data-bs-target="#modal8">
+
+          <div class="card-body">
+            <h5 class="card-title">3ft Organic Single Row Garland</h5>
+            <p class="card-text fw-bold">₱615</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal8">See Details</a>
+          </div>
+        </div>
+        <!--9-->
+        <div class="garland card col-md-6 col-lg-4 col-xl-3" style="width: 18rem">
+          <img src="../../Products/Product page/garland/balloon_garland/organic_single_garland3.png"
+            class="card-img-top" alt="product" data-bs-toggle="modal" data-bs-target="#modal9">
+
+          <div class="card-body">
+            <h5 class="card-title">6ft Organic Single Row Garland</h5>
+            <p class="card-text fw-bold">₱860</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal9">See Details</a>
+          </div>
+        </div>
+        <!--10-->
+        <div class="garland card col-md-6 col-lg-4 col-xl-3" style="width: 18rem">
+          <img src="../../Products/Product page/garland/balloon_garland/organic_single_garland.png"
+            class="card-img-top" alt="product" data-bs-toggle="modal" data-bs-target="#modal10">
+
+          <div class="card-body">
+            <h5 class="card-title">12ft Organic Single Row Garland</h5>
+            <p class="card-text fw-bold">₱1,480</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal10">See Details</a>
+          </div>
+        </div>
+        <!--11-->
+        <div class="garland card col-md-6 col-lg-4 col-xl-3" style="width: 18rem">
+          <img src="../../Products/Product page/garland/balloon_garland/full_round_arch.png" class="card-img-top"
+            alt="product" data-bs-toggle="modal" data-bs-target="#modal11">
+
+          <div class="card-body">
+            <h5 class="card-title">Full Round Arch - Basic</h5>
+            <p class="card-text fw-bold" style="padding-top: 1.5rem;">₱1,900</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal11">See Details</a>
+          </div>
+        </div>
+        <!--12-->
+        <div class="garland card col-md-6 col-lg-4 col-xl-3" style="width: 18rem">
+          <img src="../../Products/Product page/garland/balloon_garland/welcome_board_wgarland.jpg"
+            class="card-img-top" alt="product" data-bs-toggle="modal" data-bs-target="#modal11">
+
+          <div class="card-body">
+            <h5 class="card-title">Welcome Board w/Garland</h5>
+            <p class="card-text fw-bold">₱1,200</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal11">See Details</a>
+          </div>
+        </div>
+        <!--13-->
+        <div class="garland card col-md-6 col-lg-4 col-xl-3" style="width: 18rem">
+          <img src="../../Products/Product page/panel_backdrop/full_arch_half_arch_backdrop.jpg" class="card-img-top"
+            alt="product" data-bs-toggle="modal" data-bs-target="#modal11">
+
+          <div class="card-body">
+            <h5 class="card-title">Full Arch + Half Arch Backdrop</h5>
+            <p class="card-text fw-bold">₱6,000</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal13">See Details</a>
+          </div>
+        </div>
+        <div class="featured card col-md-6 col-lg-4 col-xl-3 justify-content-center" style="width: 18rem">
+          <img src="../../Products/Featured Products/f1.jpg" class="card-img-top " alt="product"
+            data-bs-toggle="modal" data-bs-target="#modal13">
+          <div class="card-body">
+            <h5 class="card-title">Organic Full Balloon Arch</h5>
+            <p class="card-text fw-bold" data-price="2600">₱2,600</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">See Details</a>
+          </div>
+        </div>
+        <div class="featured card col-md-6 col-lg-4 col-xl-3 justify-content-center" style="width: 18rem">
+          <img src="../../Products/Featured Products/f1.jpg" class="card-img-top " alt="product"
+            data-bs-toggle="modal" data-bs-target="#modal1">
+          <div class="card-body">
+            <h5 class="card-title">Organic Full Balloon Arch</h5>
+            <p class="card-text fw-bold" data-price="2600">₱2,600</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">See Details</a>
+          </div>
+        </div>
+        <div class="featured card col-md-6 col-lg-4 col-xl-3 justify-content-center" style="width: 18rem">
+          <img src="../../Products/Featured Products/f1.jpg" class="card-img-top " alt="product"
+            data-bs-toggle="modal" data-bs-target="#modal1">
+          <div class="card-body">
+            <h5 class="card-title">Organic Full Balloon Arch</h5>
+            <p class="card-text fw-bold" data-price="2600">₱2,600</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">See Details</a>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!--Modal 1-->
+  <div class="modal fade " id="modal1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Organic Full Balloon Arch</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fw-bold fs-5 mt-2">Price: ₱2,600.00</p>
+          <h4>Details</h4>
+          <p>Width: 6ft Height 6ft
+            Choice of 1-4 Colors
+            For custom or thematic designs, send us a message to get a quotation! 🎈🥳</p>
+          <h4>Features</h4>
+          <p>
+          <ul>
+            <li>Organic Shape: The arch features a unique organic shape, giving it a natural and flowing appearance.
+              It adds a whimsical and artistic touch to your event decor.</li>
+            <li>High-Quality Materials: Crafted from premium-quality materials, the Organic Full Round Arch is durable
+              and long-lasting. It ensures that your arch remains intact throughout your event.</li>
+          </ul>
+
+          </p>
+          <div class="social-media">
+            <h5 class="">Send us a message for more information</h5>
+            <div class="social-media-modal d-flex  gap-3">
+              <a href="https://www.facebook.com/balloons.by.twiin" class="text text-decoration-none"><i
+                  class="bi bi-facebook me-2"></i>Balloons by Twiin</a>
+              <a href="https://www.instagram.com/balloons.by.twiin/" class="text text-decoration-none"><i
+                  class="bi bi-instagram me-2"></i>balloons.by.twiin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal 2-->
+  <div class="modal fade" id="modal2">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Custom Balloon Bouquet</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fw-bold fs-5 mt-2">Price: ₱500</p>
+          <h4>Details</h4>
+          <p>Width: 6ft Height 6ft
+            Choice of 1-4 Colors
+            For custom or thematic designs, send us a message to get a quotation! 🎈🥳</p>
+          <h4>Features</h4>
+          <p>
+          <ul>
+            <li>Organic Shape: The arch features a unique organic shape, giving it a natural and flowing appearance.
+              It adds a whimsical and artistic touch to your event decor.</li>
+            <li>High-Quality Materials: Crafted from premium-quality materials, the Organic Full Round Arch is durable
+              and long-lasting. It ensures that your arch remains intact throughout your event.</li>
+          </ul>
+          </p>
+          <div class="social-media">
+            <h5 class="">Send us a message for more information</h5>
+            <div class="social-media-modal d-flex  gap-3">
+              <a href="https://www.facebook.com/balloons.by.twiin" class="text text-decoration-none"><i
+                  class="bi bi-facebook me-2"></i>Balloons by Twiin</a>
+              <a href="https://www.instagram.com/balloons.by.twiin/" class="text text-decoration-none"><i
+                  class="bi bi-instagram me-2"></i>balloons.by.twiin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal 3-->
+  <div class="modal fade " id="modal3">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Basic Hug Balloon</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fw-bold fs-5 mt-2">Price: ₱670</p>
+          <h4>Details</h4>
+          <p>Width: 6ft Height 6ft
+            Choice of 1-4 Colors
+            For custom or thematic designs, send us a message to get a quotation! 🎈🥳</p>
+          <h4>Features</h4>
+          <p>
+          <ul>
+            <li>Organic Shape: The arch features a unique organic shape, giving it a natural and flowing appearance.
+              It adds a whimsical and artistic touch to your event decor.</li>
+            <li>High-Quality Materials: Crafted from premium-quality materials, the Organic Full Round Arch is durable
+              and long-lasting. It ensures that your arch remains intact throughout your event.</li>
+          </ul>
+
+          </p>
+          <div class="social-media">
+            <h5 class="">Send us a message for more information</h5>
+            <div class="social-media-modal d-flex  gap-3">
+              <a href="https://www.facebook.com/balloons.by.twiin" class="text text-decoration-none"><i
+                  class="bi bi-facebook me-2"></i>Balloons by Twiin</a>
+              <a href="https://www.instagram.com/balloons.by.twiin/" class="text text-decoration-none"><i
+                  class="bi bi-instagram me-2"></i>balloons.by.twiin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal 4-->
+  <div class="modal fade " id="modal4">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Basic Number Standee</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fw-bold fs-5 mt-2">Price: ₱200</p>
+          <h4>Details</h4>
+          <p>Width: 6ft Height 6ft
+            Choice of 1-4 Colors
+            For custom or thematic designs, send us a message to get a quotation! 🎈🥳</p>
+          <h4>Features</h4>
+          <p>
+          <ul>
+            <li>Organic Shape: The arch features a unique organic shape, giving it a natural and flowing appearance.
+              It adds a whimsical and artistic touch to your event decor.</li>
+            <li>High-Quality Materials: Crafted from premium-quality materials, the Organic Full Round Arch is durable
+              and long-lasting. It ensures that your arch remains intact throughout your event.</li>
+          </ul>
+
+          </p>
+          <div class="social-media">
+            <h5 class="">Send us a message for more information</h5>
+            <div class="social-media-modal d-flex  gap-3">
+              <a href="https://www.facebook.com/balloons.by.twiin" class="text text-decoration-none"><i
+                  class="bi bi-facebook me-2"></i>Balloons by Twiin</a>
+              <a href="https://www.instagram.com/balloons.by.twiin/" class="text text-decoration-none"><i
+                  class="bi bi-instagram me-2"></i>balloons.by.twiin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal 5-->
+  <div class="modal fade " id="modal5">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Basic Table Topper</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fw-bold fs-5 mt-2">Price: ₱130</p>
+          <h4>Details</h4>
+          <p>Can choose any 18" foil balloon <br> Choice of 1-4 Colors
+
+          </p>
+          <h4>Features</h4>
+          <p>
+          <ul>
+            <li>Organic Shape: The arch features a unique organic shape, giving it a natural and flowing appearance.
+              It adds a whimsical and artistic touch to your event decor.</li>
+            <li>High-Quality Materials: Crafted from premium-quality materials, the Organic Full Round Arch is durable
+              and long-lasting. It ensures that your arch remains intact throughout your event.</li>
+          </ul>
+
+          </p>
+          <div class="social-media">
+            <h5 class="">Send us a message for more information</h5>
+            <div class="social-media-modal d-flex  gap-3">
+              <a href="https://www.facebook.com/balloons.by.twiin" class="text text-decoration-none"><i
+                  class="bi bi-facebook me-2"></i>Balloons by Twiin</a>
+              <a href="https://www.instagram.com/balloons.by.twiin/" class="text text-decoration-none"><i
+                  class="bi bi-instagram me-2"></i>balloons.by.twiin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal 6-->
+  <div class="modal fade " id="modal6">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Dedication Balloon Wrap</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fw-bold fs-5 mt-2">Price: ₱560</p>
+          <h4>Details</h4>
+          <p>Choice of 1-4 Colors</p>
+          <h4>Features</h4>
+          <p>
+          <ul>
+            <li>Suitable for birthdays, anniversaries, and corporate events.</li>
+            <li>High-Quality Materials: Crafted from premium-quality materials, the Organic Full Round Arch is durable
+              and long-lasting. It ensures that your arch remains intact throughout your event.</li>
+          </ul>
+
+          </p>
+          <div class="social-media">
+            <h5 class="">Send us a message for more information</h5>
+            <div class="social-media-modal d-flex  gap-3">
+              <a href="https://www.facebook.com/balloons.by.twiin" class="text text-decoration-none"><i
+                  class="bi bi-facebook me-2"></i>Balloons by Twiin</a>
+              <a href="https://www.instagram.com/balloons.by.twiin/" class="text text-decoration-none"><i
+                  class="bi bi-instagram me-2"></i>balloons.by.twiin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal 7-->
+  <div class="modal fade " id="modal7">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Custom Balloon Bouquet</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fw-bold fs-5 mt-2">Price: ₱500</p>
+          <h4>Details</h4>
+          <p>Choice of 1-4 Colors</p>
+          <h4>Features</h4>
+          <p>
+          <ul>
+            <li>Suitable for birthdays, anniversaries, and corporate events.</li>
+            <li>High-Quality Materials: Crafted from premium-quality materials, the Organic Full Round Arch is durable
+              and long-lasting. It ensures that your arch remains intact throughout your event.</li>
+          </ul>
+
+          </p>
+          <div class="social-media">
+            <h5 class="">If you have a question, feel free to contact us</h5>
+            <div class="social-media-modal d-flex  gap-3">
+              <a href="https://www.facebook.com/balloons.by.twiin" class="text text-decoration-none"><i
+                  class="bi bi-facebook me-2"></i>Balloons by Twiin</a>
+              <a href="https://www.instagram.com/balloons.by.twiin/" class="text text-decoration-none"><i
+                  class="bi bi-instagram me-2"></i>balloons.by.twiin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal 8-->
+  <div class="modal fade " id="modal8">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>3ft Organic Single Row Garland</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fw-bold fs-5 mt-2">Price: ₱615</p>
+          <h4>Details</h4>
+          <p>Choice of 1-4 Colors</p>
+          <h4>Features</h4>
+          <p>
+          <ul>
+            <li>Suitable for birthdays, anniversaries, and corporate events.</li>
+            <li>High-Quality Materials: Crafted from premium-quality materials, the Organic Full Round Arch is durable
+              and long-lasting. It ensures that your arch remains intact throughout your event.</li>
+          </ul>
+
+          </p>
+          <div class="social-media">
+            <h5 class="">If you have a question, feel free to contact us</h5>
+            <div class="social-media-modal d-flex  gap-3">
+              <a href="https://www.facebook.com/balloons.by.twiin" class="text text-decoration-none"><i
+                  class="bi bi-facebook me-2"></i>Balloons by Twiin</a>
+              <a href="https://www.instagram.com/balloons.by.twiin/" class="text text-decoration-none"><i
+                  class="bi bi-instagram me-2"></i>balloons.by.twiin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Modal 8-->
+<div class="modal fade " id="modal8">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>3ft Organic Single Row Garland</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="fw-bold fs-5 mt-2">Price: ₱615</p>
+        <h4>Details</h4>
+        <p>Choice of 1-4 Colors</p>
+        <h4>Features</h4>
+        <p>
+        <ul>
+          <li>Suitable for birthdays, anniversaries, and corporate events.</li>
+          <li>High-Quality Materials: Crafted from premium-quality materials, the Organic Full Round Arch is durable
+            and long-lasting. It ensures that your arch remains intact throughout your event.</li>
+        </ul>
+
+        </p>
+        <div class="social-media">
+          <h5 class="">If you have a question, feel free to contact us</h5>
+          <div class="social-media-modal d-flex  gap-3">
+            <a href="https://www.facebook.com/balloons.by.twiin" class="text text-decoration-none"><i
+                class="bi bi-facebook me-2"></i>Balloons by Twiin</a>
+            <a href="https://www.instagram.com/balloons.by.twiin/" class="text text-decoration-none"><i
+                class="bi bi-instagram me-2"></i>balloons.by.twiin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal 9-->
+<div class="modal fade " id="modal9">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>6ft Organic Single Row Garland
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="fw-bold fs-5 mt-2">Price: ₱860</p>
+        <h4>Details</h4>
+        <p>Choice of 1-4 Colors</p>
+        <h4>Features</h4>
+        <p>
+        <ul>
+          <li>Suitable for birthdays, anniversaries, and corporate events.</li>
+          <li>High-Quality Materials: Crafted from premium-quality materials, the Organic Full Round Arch is durable
+            and long-lasting. It ensures that your arch remains intact throughout your event.</li>
+        </ul>
+
+        </p>
+        <div class="social-media">
+          <h5 class="">If you have a question, feel free to contact us</h5>
+          <div class="social-media-modal d-flex  gap-3">
+            <a href="https://www.facebook.com/balloons.by.twiin" class="text text-decoration-none"><i
+                class="bi bi-facebook me-2"></i>Balloons by Twiin</a>
+            <a href="https://www.instagram.com/balloons.by.twiin/" class="text text-decoration-none"><i
+                class="bi bi-instagram me-2"></i>balloons.by.twiin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal 10-->
+<div class="modal fade " id="modal10">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>12ft Organic Single Row Garland</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="fw-bold fs-5 mt-2">Price: ₱615</p>
+        <h4>Details</h4>
+        <p>Choice of 1-4 Colors</p>
+        <h4>Features</h4>
+        <p>
+        <ul>
+          <li>Suitable for birthdays, anniversaries, and corporate events.</li>
+          <li>High-Quality Materials: Crafted from premium-quality materials, the Organic Full Round Arch is durable
+            and long-lasting. It ensures that your arch remains intact throughout your event.</li>
+        </ul>
+
+        </p>
+        <div class="social-media">
+          <h5 class="">If you have a question, feel free to contact us</h5>
+          <div class="social-media-modal d-flex  gap-3">
+            <a href="https://www.facebook.com/balloons.by.twiin" class="text text-decoration-none"><i
+                class="bi bi-facebook me-2"></i>Balloons by Twiin</a>
+            <a href="https://www.instagram.com/balloons.by.twiin/" class="text text-decoration-none"><i
+                class="bi bi-instagram me-2"></i>balloons.by.twiin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal 11-->
+<div class="modal fade " id="modal11">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Full Round Arch - Basic</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="fw-bold fs-5 mt-2">Price: ₱1,900</p>
+        <h4>Details</h4>
+        <p>Choice of 1-4 Colors</p>
+        <h4>Features</h4>
+        <p>
+        <ul>
+          <li>Suitable for birthdays, anniversaries, and corporate events.</li>
+          <li>High-Quality Materials: Crafted from premium-quality materials, the Organic Full Round Arch is durable
+            and long-lasting. It ensures that your arch remains intact throughout your event.</li>
+        </ul>
+
+        </p>
+        <div class="social-media">
+          <h5 class="">If you have a question, feel free to contact us</h5>
+          <div class="social-media-modal d-flex  gap-3">
+            <a href="https://www.facebook.com/balloons.by.twiin" class="text text-decoration-none"><i
+                class="bi bi-facebook me-2"></i>Balloons by Twiin</a>
+            <a href="https://www.instagram.com/balloons.by.twiin/" class="text text-decoration-none"><i
+                class="bi bi-instagram me-2"></i>balloons.by.twiin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal 12-->
+<div class="modal fade " id="modal11">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Full Round Arch - Basic</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="fw-bold fs-5 mt-2">Price: ₱1,900</p>
+        <h4>Details</h4>
+        <p>Choice of 1-4 Colors</p>
+        <h4>Features</h4>
+        <p>
+        <ul>
+          <li>Suitable for birthdays, anniversaries, and corporate events.</li>
+          <li>High-Quality Materials: Crafted from premium-quality materials, the Organic Full Round Arch is durable
+            and long-lasting. It ensures that your arch remains intact throughout your event.</li>
+        </ul>
+
+        </p>
+        <div class="social-media">
+          <h5 class="">If you have a question, feel free to contact us</h5>
+          <div class="social-media-modal d-flex  gap-3">
+            <a href="https://www.facebook.com/balloons.by.twiin" class="text text-decoration-none"><i
+                class="bi bi-facebook me-2"></i>Balloons by Twiin</a>
+            <a href="https://www.instagram.com/balloons.by.twiin/" class="text text-decoration-none"><i
+                class="bi bi-instagram me-2"></i>balloons.by.twiin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <section class="pagination">
+    <ul class="pagination-list"></ul>
+  </section>
+  <!--Footer Page-->
+  <footer class="page-footers p-5 text-md-left py-5 position-relative">
+    <div class="container py-5 position-absolute-bottom-0">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-5 pe-5">
+          <img src="../../Logo/logo-removebg-preview.png" alt="logo" class="img-fluid w-75">
+          <p class="text-secondary">
+            &copy 2023 Balloons by Twiin
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3 ">
+          <h5 class="font-weight-bold mb-4">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a class="underline mb-1 text-dark fw-light text-decoration-none"
+                href="../../Htmll/ProductPage/product.html">Products</a></li>
+            <li><a class="underline mb-1 text-dark text-decoration-none"
+                href="../../Htmll/AboutPage/about.html">About</a></li>
+            <li><a class="underline mb-1 text-dark text-decoration-none"
+                href="../../Htmll/ContactPage/contact.html">Contact</a></li>
+            <li><a class="underline mb-1 text-dark text-decoration-none" href="../../Htmll/FaqsPage/faqs.html">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <h5 class="font-weight-bold mb-4">Product</h5>
+          <ul class="list-unstyled mb-5">
+            <li><a class="underline mb-1 text-dark text-decoration-none"
+                href="../../Htmll/ProductPage/product.html">Featured Product</a></li>
+            <li><a class="underline mb-1 text-dark text-decoration-none" href="">Garland</a></li>
+            <li><a class="underline mb-1 text-dark text-decoration-none" href="">Panel Backdrop</a></li>
+            <li><a class="underline mb-1 text-dark text-decoration-none" href="">Featured</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-xs-12">
+          <h5 class="font-weight-bold mb-4">Contact</h5>
+          <p class="d-flex align-items-center"><i class="bi bi-telephone pe-1 mx-2 lead"></i>0956 566 5863</p>
+          <p class="d-flex"><i class="bi bi-geo-alt pe-1 mx-2 lead"></i>Camella Springville, Starling Street, Bacoor,
+            Philippines</p>
+          <p class="d-flex align-items-center"><i class="bi bi-envelope pe-1 mx-2 lead"></i>balloonsbytwiin@gmail.com
+          </p>
+          <div class="footer-map w-100">
+            <iframe class="w-100 h-100"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.760317629215!2d120.99001987421299!3d14.383274782362271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d160c5f9ba7d%3A0xec5dfda617a3b011!2sStarling%20St%2C%20Molino%20IV%2C%20Bacoor%2C%20Cavite!5e0!3m2!1sen!2sph!4v1684389237220!5m2!1sen!2sph"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="social-media">
+        <hr>
+        <h5>Like and Follow us</h5>
+        <div class="platform d-flex gap-2 ">
+          <a href="https://www.facebook.com/balloons.by.twiin" class="mt-1"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/balloons.by.twiin/" class="mt-1"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="p-2 text-secondary text-center">
+    <!--Button up-->
+    <a href="#" class="button-up position-fixed bottom-0 end-0 p-4"><i class="fs-1 bi bi-arrow-up-square-fill"></i></a>
+  </footer>
+  <!--bootsrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <!--scroll js-->
+  <script src="../../Htmll/scroll.js"></script>
+  <!--Jquery-->
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+  <!--Isotope js-->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <script>
+    $(document).ready(function () {
+      // init Isotope
+      var $grid = $('.product-list').isotope({
+        // options
+      });
+      // filter items on button click
+      $('.filter-button-group').on('click', 'button', function () {
+        var filterValue = $(this).attr('data-filter');
+        $('.product-list').addClass('justify-content-center');
+        resetFilterButtons();
+        $(this).addClass('active')
+        $grid.isotope({ filter: filterValue });
+      });
+
+      var filterButtons = $('.filter-button-group').find('button');
+      function resetFilterButtons() {
+        filterButtons.each(function () {
+          $(this).removeClass('active');
+        })
+      }
+    })
+  </script>
+</body>
+
+</html>
+<!-- <div class="d-flex justify-content-center gap-3">
+      <div class="text-center mb-5">
+        <button class="filter btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-filter-left"></i> Filter
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="category dropdown-item" onclick="filterSelection('all')" href="#">Featured</a></li>
+          <li><a class="category dropdown-item" onclick="filterSelection('bouquet')" href="#">Bouquet</a></li>
+          <li><a class="category dropdown-item" onclick="filterSelection('garland')" href="#">Garland</a></li>
+          <li><a class="category dropdown-item" onclick="filterSelection('panelBackdrop')" href="#">Panel Backdrop</a></li>
+          <li><a class="category dropdown-item" onclick="filterSelection('kidsBirthday')" href="#">Kids Birthday Celebration</a></li>
+          <li data-filter="Milestone Birthday Celebration"><a class="category dropdown-item" href="#">Milestone Birthday Celebration</a></li>
+        </ul>
+      </div>
+      <div class="text-center mb-5">
+        <button class="sort btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Sort by
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Price, low to high</a></li>
+          <li><a class="dropdown-item" href="#">Price, high to low</a></li>
+        </ul>
+      </div>
+    </div> -->

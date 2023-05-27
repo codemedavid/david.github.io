@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary: #fdaaba;
+  --accent: #eee8a9;
+  --background: #fdfdfd;
+  --background2: #d4f4ff;
+  --accent2: #00deff;
+  --black: #171717;
+  --secondary: #80afdb;
+  --background: #d4f4ff;
+}
+/*Navigation*/
+.logo {
+  width: 100%;
+  max-width: 250px;
+}
+.navBar {
+  padding: 32px 0;
+}
+.nav-link {
+  margin-left: 41px;
+}
+.nav-link:hover {
+  color: var(--primary);
+}
+/*Filter and Sort*/
+.filter .btn{
+  border: 1px solid var(--primary);
+}
+.filter .active {
+  background-color: var(--primary);
+}
+.filter .btn:focus{
+  border: 1px solid #d895a3;
+}
+.filter .btn:hover{
+  background-color: var(--primary);
+}
+/* .filter,
+.sort {
+  color: #171717;
+  background: none;
+  border: 1px solid #fdaaba;
+}
+.filter:focus{
+  border: var(--primary);
+}
+.filter:hover,
+.sort:hover {
+  background: none;
+  color: #171717;
+  border: 1px solid #fdaaba;
+}
+.filter:focus,
+.sort:focus {
+  background: none;
+  color: #171717;
+  border: 1px solid #fdaaba;
+}
+.dropdown-menu li a:focus {
+  background-color: #d895a3;
+}
+/*Products*/
+.featured-header {
+  font-size: 3rem;
+}
+section.products {
+
+  width: 100%;
+} 
+
+.card {
+  overflow: hidden;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.card-body a:hover {
+  background-color: #d895a3 !important;
+}
+.card:hover {
+  translate: 0 -12px;
+}
+.text {
+  color: var(--black);
+}
+.text:hover {
+  opacity: 0.8;
+}
+.social-media-modal i {
+  font-size: 20px;
+  color: var(--black);
+}
+.btn-primary {
+  padding: 10px 32px;
+  color: var(--black);
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.card .btn {
+  border: 1px solid var(--primary);
+  background-color: var(--primary) !important;
+}
+.card img{
+  cursor: pointer;
+}
+.btn-primary:hover {
+  color: var(--black);
+  border: 1px solid var(--primary);
+  background-color: #d895a3;
+}
+.btn-primary:focus {
+  border: 1px solid var(--primary) !important;
+  outline: none;
+}
+
+
+.show{
+  display: block;
+}
+/*Pagination*/
+.pagination ul li a {
+  color: var(--black);
+}
+.pagination ul li a:hover,
+.pagination ul li a:focus {
+  color: var(--black);
+}
+.pagination .active {
+  color: var(--black);
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+}
+.pagination .active:hover {
+  background-color: #d895a3;
+}
+/*Footer*/
+.underline{
+  display: inline-block;
+  padding-bottom: 6px;
+  position: relative;
+}
+.underline::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fdaaba;
+  transition: width 0.4s ease;
+}
+.underline:hover::before{
+  width: 100%;
+  right: auto;
+}
+.button-up {
+  color: var(--primary);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.button-up.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(-20px);
+}
+.platform a {
+  transition: all 0.3s ease;
+  padding: 6px 10px;
+  background-color: var(--accent);
+  color: var(--black);
+  border-radius: 10px;
+}
+.platform a i {
+  font-size: 1.2rem;
+}
+.platform a:hover {
+  transform: translateY(-10px);
+}
+footer {
+  font-weight: 300;
+}
